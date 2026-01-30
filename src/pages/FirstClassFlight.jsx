@@ -376,7 +376,7 @@ const FirstClassFlight = () => {
                         <a href="tel:+1234567890" className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow group">
                             <Phone className="w-12 h-12 text-[#c8a27a] mx-auto mb-4 group-hover:scale-110 transition-transform" />
                             <h3 className="text-xl font-bold text-gray-900 mb-2">Phone</h3>
-                            <p className="text-gray-600">+1 (234) 567-890</p>
+                            <p className="text-gray-600">(866) 307-5957</p>
                         </a>
 
                         <a href="mailto:info@firstclassflight.com" className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow group">

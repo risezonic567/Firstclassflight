@@ -40,11 +40,11 @@ export default function Footer() {
                           <ul className="space-y-4">
                               <li className="flex items-start space-x-3 text-gray-400">
                                   <MapPin className="w-5 h-5 text-[#c8a27a] shrink-0" />
-                                  <span>123 Luxury Avenue, Suite 100<br />New York, NY 10001</span>
+                                  <span>17662 Irvine Blvd, Suite 9 Tustin, CA 92780</span>
                               </li>
                               <li className="flex items-center space-x-3 text-gray-400">
                                   <Phone className="w-5 h-5 text-[#c8a27a] shrink-0" />
-                                  <span>+1 (234) 567-890</span>
+                                  <a href="tel:+8663075957">+8663075957</a>
                               </li>
                               <li className="flex items-center space-x-3 text-gray-400">
                                   <Mail className="w-5 h-5 text-[#c8a27a] shrink-0" />

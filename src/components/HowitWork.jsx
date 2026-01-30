@@ -34,7 +34,7 @@ export default function HowItWorks() {
                     viewport={{ once: true }}
                 >
                     <span className="mb-4 block text-sm tracking-[0.25em] text-[#c8a27a]">
-                        HOW TO BOOK
+                        <a href="tel:+8663075957">HOW TO BOOK</a>
                     </span>
 
                     <h2 className="mb-6 font-serif text-4xl font-semibold text-gray-900">
@@ -84,7 +84,7 @@ export default function HowItWorks() {
                         whileTap={{ scale: 0.97 }}
                         className="mt-12 rounded-md bg-gray-900 px-8 py-4 text-sm tracking-widest text-white transition hover:bg-gray-800"
                     >
-                        HOW TO BOOK
+                        <a href="tel:+8663075957">HOW TO BOOK</a>
                     </motion.button>
                 </motion.div>
 
