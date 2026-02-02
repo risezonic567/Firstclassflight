@@ -24,7 +24,7 @@ dist-ssr
 *.sw?
 
 # Build output (Vite / React)
-dist/
+# dist/
 
 # Node modules
 node_modules/
