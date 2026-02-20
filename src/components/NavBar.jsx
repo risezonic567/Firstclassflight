@@ -1,57 +1,86 @@
-import React, { useState, useEffect } from 'react';
-import logo from "../images/logo/logo.png"
-import { Menu } from 'lucide-react';
-import { Link } from 'react-router-dom';
-export default function NavBar() {
-    const [scrolled, setScrolled] = useState(false);
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
+import React, { useEffect, useState } from 'react'
+import { NavLink } from "react-router-dom"
+import {Menu,X} from 'lucide-react'
+export default function Navbar() {
+    let [scroll, setscroll] = useState(false)
+    let [mobile, setmobile] = useState(false)
+    
     useEffect(() => {
-        const handleScroll = () => {
-            setScrolled(window.scrollY > 50);
-        };
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
+        let scrolled =()=>setscroll(window.scrollY > 100)
+            window.addEventListener("scroll", scrolled)
+            return () => window.removeEventListener("scroll", scrolled)
+    }, [])
+    let navitems = [
+        {
+            title: "Home",
+
+            path: "/home"
+        },
+        {
+            title: "Business Class Flights",
+
+            path: "/business-class-flights"
+        },
+        {
+            title: "About Us",
+
+            path: "/about"
+        },
+        {
+            title: "Booking Steps",
+            path: "booking-steps"
+        },
+        {
+            title: "Blogs",
+            path: "blogs"
+        },
+        {
+            title: "Gift Vouchers",
+            path: "gift-vouchers"
+        },
+        {
+            title: "Contact Us",
+
+            path: "/contact-us"
+        }
+    ]
     return (
-        <div>
-            {/* Navigation */}
-            <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-slate-900/95 backdrop-blur-sm shadow-lg' : 'bg-transparent'}`}>
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="flex justify-between items-center h-20">
-                        <div className="flex items-center space-x-2">
-                            <Link to="">  <img width={170} src={logo} alt="logo" /></Link>
-                           
-                        </div>
+        <>
+            <nav className={`sticky top-0  w-full z-1000 transition-all duration-300 ${scroll ? 'bg-black text-white' : 'bg-transparent text-black'}`}>
+                <div className='max-w-8xl mx-auto h-20  flex items-center justify-between'>
 
-                        <div className="hidden md:flex items-center space-x-8">
-                            <Link to="/" className="text-white hover:text-[#c8a27a] transition-colors">Home</Link>
-                            <Link to="/business-class-flight" className="text-white hover:text-[#c8a27a] transition-colors">Business Class</Link>
-                            <Link to="/frist-class-flight" className="text-white hover:text-[#c8a27a] transition-colors">First Class</Link>
-                            <Link to="/about-us" className="text-white hover:text-[#c8a27a] transition-colors">About Us</Link>
-                            <Link to="#corporate" className="text-white hover:text-[#c8a27a] transition-colors">Corporate</Link>
-                            <Link to="/contact-us" className="text-white hover:text-[#c8a27a] transition-colors">Contact</Link>
-                        </div>
-
-                        <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="md:hidden text-white">
-                            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-                        </button>
+                    <NavLink to={'/'}>
+                        {" "}
+                        <img src="/images/logo/FCF LOGO.png" className='h-12 sm:h-15 md:h-18 ms-3 mt-2' alt="firstclassflight logo" />
+                    </NavLink>
+                    <div className='hidden md:flex space-x-4'>
+                        {
+                            navitems.map((item, id) => (
+                                <NavLink key={id} className={'me-5 text-xl  hover:text-red-600 hover:underline hover:decoration-2 hover:decoration-blue-800 transition-all duration-300 ease-in'} to={item.path}>{item.title}</NavLink>
+                            ))
+                        }
                     </div>
-                </div>
-
-                {/* Mobile Menu */}
-                {isMenuOpen && (
-                    <div className="md:hidden bg-slate-900/98 backdrop-blur-sm">
-                        <div className="px-4 py-6 space-y-4">
-                            <Link to="#home" className="block text-white hover:text-[#c8a27a]">Home</Link>
-                            <Link to="#business" className="block text-white hover:text-[#c8a27a]">Business Class</Link>
-                            <Link to="/frist-class-flight" className="block text-white hover:text-[#c8a27a]">First Class</Link>
-                            <Link to="#about" className="block text-white hover:text-[#c8a27a]">About Us</Link>
-                            <Link to="#corporate" className="block text-white hover:text-[#c8a27a]">Corporate</Link>
-                            <Link to="/contact-us" className="block text-white hover:text-[#c8a27a]">Contact</Link>
-                        </div>
-                    </div>
-                )}
+                    <button className='md:hidden' onClick={() => { setmobile(!mobile) }}>
+                        {mobile ? <X size={28} /> : <Menu size={28} />}
+                    </button>
+                      </div>
+                    {
+                        mobile && (
+                            <div className='md:hidden bg-black text-white p-5 space-y-4'>
+                                
+                                   <div  className='space-y-4'>
+                                    {
+                                     navitems.map((item, id) => (
+                                        <NavLink key={id} className={'block hover:text-red-600 hover:underline hover:decoration-2 hover:decoration-blue-800 transition-all duration-300 ease-in'} to={item.path}>{item.title}</NavLink>
+                                    ))
+                    }
+                                   </div>
+                                
+                            </div>
+                        )
+                    }
+              
             </nav>
-        </div>
+        </>
     )
 }
