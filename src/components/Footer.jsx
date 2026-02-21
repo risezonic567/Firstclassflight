@@ -75,7 +75,7 @@ export default function Footer() {
                                 </div>
                                  <div className='ps-4'>
                                 <h2 className='text-lg sm:text-xl md:text-2xl'>Address:-</h2>
-                                <p className='text-sm sm:text-base hover:text-red-600 transition-all duration-300 ease-in'>A-16 Noida City Center</p>
+                                <p className='text-sm sm:text-base hover:text-red-600 transition-all duration-300 ease-in'>A-16 17662 Irvine Blvd, Suite 9 Tustin, CA 92780</p>
                             </div>
                             </div>
                             <div className='flex'>
@@ -97,7 +97,7 @@ export default function Footer() {
                             </div>
                              <div className='ps-4 py-3'>
                                 <h2 className='text-lg sm:text-xl md:text-2xl'>Phone:-</h2>
-                                <NavLink to={'tel:9155014125'} className='text-sm sm:text-base hover:text-red-600 transition-all duration-300 ease-in'>9155014125</NavLink>
+                                <NavLink to={'tel:+1-844-821-5950'} className='text-sm sm:text-base hover:text-red-600 transition-all duration-300 ease-in'>+1-844-821-5950</NavLink>
                             </div>
                             </div>
 
@@ -109,7 +109,7 @@ export default function Footer() {
                             </div>
                              <div className='ps-4 py-3'>
                                 <h2 className='text-lg sm:text-xl md:text-2xl'>Whatsapp:-</h2>
-                                <NavLink to={'https://wa.me/9155014125'} className='text-sm sm:text-base hover:text-red-600 transition-all duration-300 ease-in'>9155014125</NavLink>
+                                <NavLink to={'https://wa.me/+1-844-821-5950'} className='text-sm sm:text-base hover:text-red-600 transition-all duration-300 ease-in'>+1-844-821-5950</NavLink>
                             </div>
                            </div>
 
@@ -118,18 +118,18 @@ export default function Footer() {
                 </div>
                 <hr className='text-gray-600 p-2' />
                
-                   <div className='p-2 sm:p-3 md:p-4 grid grid-cols-1 md:grid-cols-3'>
+                   <div className='flex pb-3 justify-center'>
                     <p className='text-sm sm:text-base flex'>
-                        <Copyright size={24} /> <p>2026 Malani Marble. All rights reserved</p>
+                        <Copyright size={24} /> <p>2026 First-Class Flight. All rights reserved</p>
                     </p>
-                    <div className='grid grid-cols-1 md:grid-cols-3'>
+                    {/* <div className='grid grid-cols-1 md:grid-cols-3'>
                         <NavLink to={"/"} className={'ms-9  hover:text-red-600 hover:underline hover:decoration-2 hover:decoration-blue-800 transition-all duration-300 ease-in'}>Privacy-Policy</NavLink>
                             <NavLink to={"/"} className={'ms-3  hover:text-red-600 hover:underline hover:decoration-2 hover:decoration-blue-800 transition-all duration-300 ease-in '}>Term-And-Condition</NavLink>
                             <NavLink to={"/"} className={'ms-3  hover:text-red-600 hover:underline hover:decoration-2 hover:decoration-blue-800 transition-all duration-300 ease-in '}>Booking-Steps</NavLink>
                     </div>
                     <p className='text-sm sm:text-base '>
                        <p>Develope and Design By <span className='text-red-600'>Risezonic</span></p>
-                    </p>
+                    </p> */}
                    </div>
               
             </footer>

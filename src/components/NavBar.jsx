@@ -26,14 +26,14 @@ export default function Navbar() {
 
             path: "/about"
         },
-        {
-            title: "Booking Steps",
-            path: "booking-steps"
-        },
-        {
-            title: "Blogs",
-            path: "blogs"
-        },
+        // {
+        //     title: "Booking Steps",
+        //     path: "booking-steps"
+        // },
+        // {
+        //     title: "Blogs",
+        //     path: "blogs"
+        // },
         {
             title: "Gift Vouchers",
             path: "gift-vouchers"
