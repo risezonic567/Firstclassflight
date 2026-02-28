@@ -1,0 +1,66 @@
+import React, { useState } from 'react'
+import { faqdata } from '../data/faq'
+import { FaPlus } from 'react-icons/fa';
+const tabs = [
+    { label: "Search", key: "booking_search" },
+    { label: "Payment", key: "payment_pricing" },
+    { label: "Cancellation", key: "cancellation_refund" },
+    { label: "Changes", key: "changes_rescheduling" },
+    { label: "Baggage", key: "baggage_checkin" },
+    { label: "Visa", key: "visa_documents" },
+    { label: "Delays", key: "delays_cancellations" },
+    { label: "Account", key: "account_support" }
+];
+export default function Faq() {
+    let [tab, settab] = useState("booking_search")
+    let [open, setopen] = useState(null)
+    let selectedFaq = faqdata[tab] || []
+    console.log(selectedFaq)
+    console.log(faqdata)
+    return (
+        <>
+            <section>
+                <div className='max-w-7xl mx-auto py-10 px-4'>
+                    <h2 className='text-center text-xl sm:text-2xl md:text-3xl p-3 sm:p-4 md:p-5'>Frequntly Asked Questions</h2>
+                    <div className='text-center m-auto'>
+                        {
+                            tabs.map((item, id) => (
+                                <button key={id} onClick={() => settab(item.key)} className={`cursor-pointer bg-blue-950 text-center p-1 sm:p-2 md:p-3 text-white rounded gap-10 ms-5 mt-3 ${item.key === tab ? 'bg-red-500 transition duration-300 cursor-pointer' : ''}`}>
+                                    {item.label}
+                                </button>
+                            ))
+                        }
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div data-aos="zoom-out-down">
+                    <div className="max-w-7xl mx-auto py-12 px-4">
+                        <div className='grid grid-cols-1 gap-5 m-auto text-center'>
+                            {
+                                selectedFaq?.map((item, id) => {
+                                    let openIndex = open === id
+                                    return (
+                                        <div key={id} className='border rounded-2xl overflow-hidden '>
+                                            <button className={`flex items-center justify-between p-4 md:p-5 text-left w-full ${openIndex ? "bg-blue-900 text-white" : ""}`} onClick={() => setopen(openIndex ? null : id)}>
+
+                                                <span className=''>{item.question}</span>
+                                                <span className={`inline-block text-xl transition-transform duration-300 ${openIndex ? "rotate-45" : "rotate-0"}`}><FaPlus className='text-2xl' /></span>
+                                            </button>
+                                            <div className={`grid transition-all duration-300 ease-in-out ${openIndex ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}>
+                                                <div className={`overflow-hidden px-4 md:px-5 pb-4 text-gray-600 ${openIndex ? "bg-blue-100 text-dark-400" : ""}`}>
+                                                    {item.answer}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    )
+                                })
+                            }
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </>
+    )
+}

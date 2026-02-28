@@ -14,29 +14,21 @@ export default function Navbar() {
         {
             title: "Home",
 
-            path: "/home"
+            path: "/"
         },
         {
-            title: "Business Class Flights",
+            title: "Search Flights",
 
-            path: "/business-class-flights"
+            path: "/search-flights"
         },
         {
             title: "About Us",
 
-            path: "/about"
+            path: "/about-us"
         },
-        // {
-        //     title: "Booking Steps",
-        //     path: "booking-steps"
-        // },
-        // {
-        //     title: "Blogs",
-        //     path: "blogs"
-        // },
         {
-            title: "Gift Vouchers",
-            path: "gift-vouchers"
+            title: "FAQ",
+            path: "/faq"
         },
         {
             title: "Contact Us",

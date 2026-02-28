@@ -1,6 +1,6 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, FreeMode, Pagination, Navigation } from 'swiper/modules';
+import { Autoplay, FreeMode, Pagination } from 'swiper/modules';
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/free-mode";
@@ -96,15 +96,15 @@ export default function HeroSection() {
             <section className='max-w-7xl mx-auto py-5 px-3'>
                 <div className='p-2 sm:p-3 md:p-4'>
                     <h2 className='text-lg sm:text-xl md:text-2xl text-center'>Luxury travel, smarter pricing, and personal service for executives and premium travelers.</h2>
-                    <p className='text-sm sm:text-base text-justify text-gray-600 font-semibold'>Traveling in a premium cabin shouldn’t mean overpaying. At First Class Flight, we assist executives, regular travelers, and corporate groups in finding amazing rates for long-haul premium flights. Our experts are available to uncover negotiated, discounted, or privately negotiated rates/shuttles that are not published in the public reservation systems.</p>
+                    <p className='text-sm sm:text-base text-justify text-gray-600 font-semibold py-3'>Traveling in a premium cabin shouldn’t mean overpaying. At First Class Flight, we assist executives, regular travelers, and corporate groups in finding amazing rates for long-haul premium flights. Our experts are available to uncover negotiated, discounted, or privately negotiated rates/shuttles that are not published in the public reservation systems.</p>
                 </div>
-                <div className='p-2 sm:p-3 md:p-4'>
+                <div className='p-2 sm:p-3 md:p-4 relative pb-15'>
                     <Swiper
                         speed={300}
                         spaceBetween={20}
                         freeMode={true}
                         pagination={{ clickable: true }}
-                        navigation={true}
+                      
                         autoplay={{ delay: 2500, disableOnInteraction: false }}
                         breakpoints={{
                             0: { slidesPerView: 1, spaceBetween: 12 },
@@ -112,17 +112,17 @@ export default function HeroSection() {
                             768: { slidesPerView: 3, spaceBetween: 20 },
                             1024: { slidesPerView: 4, spaceBetween: 24 }
                         }}
-                        modules={[FreeMode, Pagination, Autoplay, Navigation]}
-                        className="mySwiper"
+                        modules={[FreeMode, Pagination, Autoplay]}
+                        className="mySwiper py-5"
                     >
 
                         {
                             popular.map((item, id) => (
                                 <SwiperSlide className='' key={id}>
 
-                                    <div >
+                                    <div className='' >
                                         <div className='relative overflow-hidden group transition'>
-                                            <img src={item.img} alt="" className=' h-[250px] w-[320px] transition-all duration-300 group-hover:scale-110' />
+                                            <img src={item.img} alt="" className=' h-full w-full transition-all duration-300 group-hover:scale-110' />
                                         </div>
                                         <div className='p-1 sm:p-2 md:p-3'>
                                             <h2 className='text-lg sm:text-xl md:text-2xl text-center'>{item.country}</h2>
