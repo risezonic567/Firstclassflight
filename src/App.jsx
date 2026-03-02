@@ -1,10 +1,11 @@
 import React, { lazy, Suspense, useEffect, useState } from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router'
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router'
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Loader from './components/Loader'
+import NotFound from './components/PageNotFound';
 
 let Home = lazy(() => import('./pages/Homepage'))
 let About = lazy(() => import('./pages/Aboutpage'))
@@ -15,7 +16,8 @@ let Faq = lazy(() => import('./components/Faq'))
 let ContactUs = lazy(() => import('./components/Contactus'))
 let AboutPage = lazy(() => import('./pages/Aboutpage'))
 let SearchFlights = lazy(() => import('./components/SearchFlights'))
-let Supports= lazy(()=>import('./components/Supports'))
+let Supports = lazy(() => import('./components/Supports'))
+let Disclaimers = lazy(() => import('./pages/policies/Disclaimer'))
 export default function App() {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
@@ -39,7 +41,9 @@ export default function App() {
             <Route path="/contact-us" element={<ContactUs />} />
             <Route path="/about-us" element={<AboutPage />} />
             <Route path="/search-flights" element={<SearchFlights />} />
-             <Route path="/support" element={<Supports />} />
+            <Route path="/support" element={<Supports />} />
+            <Route path="/disclaimer" element={<Disclaimers />} />
+            <Route path='/*' element={<NotFound />} />
           </Routes>
         </Suspense>
 
