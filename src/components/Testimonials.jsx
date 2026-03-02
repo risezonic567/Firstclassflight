@@ -32,7 +32,7 @@ export default function Testimonials() {
     "name": "Luxury Travel Consultant",
     "location": "Dubai",
     "img": "https://images.unsplash.com/photo-1552058544-f2b08422138a?auto=format&fit=crop&w=200&q=80",
-    "message": "Exceptional service and unbeatable business class fares. The team arranged everything flawlessly and professionally."
+    "message": "Exceptional service and unbeatable business class fares. The team arranged everything flawlessly and professionally"
   },
   {
     "name": "Startup Founder",

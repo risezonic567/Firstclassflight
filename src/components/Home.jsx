@@ -123,7 +123,7 @@ export default function Home() {
                         <NavLink to={'/search-flights'} className={`p-4 mx-auto bg-blue-600  hover:bg-blue-800 rounded-xl text-white`}>Search Flights</NavLink>
                     </div>
                      <div>
-                        <NavLink to={'tel:9155014125'} className={`p-4 mx-auto bg-gray-600 hover:bg-black rounded-xl text-white`}>Call Us Now</NavLink>
+                        <NavLink to={'tel:8663075957'} className={`p-4 mx-auto bg-gray-600 hover:bg-black rounded-xl text-white`}>Call Us Now</NavLink>
                     </div>
                     </div>
                 </div>
@@ -255,7 +255,7 @@ export default function Home() {
                             <div className='p-1 sm:p-2 md:p-3'>
                                 <h2 className='text-center text-lg sm:text-xl md:text-2xl text-gray-600'>Call Us</h2>
                                 <div className='flex items-center justify-center'>
-                                    <NavLink to="tel:9155014125" className='text-center text-sm sm:text-base hover:text-red-600 transition-all duration-300 ease-in py-2'>9155014125</NavLink>
+                                    <NavLink to="tel:8663075957" className='text-center text-sm sm:text-base hover:text-red-600 transition-all duration-300 ease-in py-2'>8663075957</NavLink>
                                 </div>
                             </div>
 
@@ -281,7 +281,7 @@ export default function Home() {
                             <div className='p-1 sm:p-2 md:p-3'>
                                 <h2 className='text-center text-lg sm:text-xl text-black md:text-2xl '>Whatsapp</h2>
                                 <div className='flex items-center justify-center'>
-                                    <NavLink to="https://wa.me/9155014125" className='text-center text-sm sm:text-base hover:text-red-600 transition-all duration-300 ease-in py-2'>Chat With Us</NavLink>
+                                    <NavLink to="https://wa.me/8663075957" className='text-center text-sm sm:text-base hover:text-red-600 transition-all duration-300 ease-in py-2'>Chat With Us</NavLink>
                                 </div>
                             </div>
 

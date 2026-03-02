@@ -8,7 +8,7 @@ export default function Supports() {
             <section className="relative w-full h-[70vh] md:h-[85vh] overflow-hidden">
 
                 <img
-                    src=""
+                    src="/images/about/support.jpeg"
 
                     className="absolute inset-0 w-full h-full object-cover"
                 />
@@ -26,7 +26,7 @@ export default function Supports() {
 
 
                     <div>
-                        <NavLink to={'tel:9155014125'} className={`p-4 mx-auto bg-blue-900 hover:bg-blue-600 rounded-xl text-white`}>Call Us Now</NavLink>
+                        <NavLink to={'tel:8663075957'} className={`p-4 mx-auto bg-blue-900 hover:bg-blue-600 rounded-xl text-white`}>Call Us Now</NavLink>
                     </div>
 
                 </div>
