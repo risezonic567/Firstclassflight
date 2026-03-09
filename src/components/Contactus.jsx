@@ -13,11 +13,7 @@ export default function Contactus() {
 
                     className="absolute inset-0 w-full h-full object-cover"
                 />
-
-
                 <div className="absolute inset-0 bg-black/40"></div>
-
-
                 <div className="relative z-10  h-full px-4 text-center">
                     <div className='flex items-center justify-center h-80 '>
                         <h1 className="text-white font-bold text-xl sm:text-2xl md:text-4xl lg:text-5xl max-w-4xl leading-snug">
@@ -90,7 +86,7 @@ export default function Contactus() {
                                             to="tel:8663075957"
                                             className="text-blue-600 hover:text-red-600  hover:underline transform hover:-translate-x-2 hover:decoration-2 hover:decoration-blue-800 transition-all duration-300 ease-in"
                                         >
-                                            8663075957
+                                            +866 307-5957
                                         </NavLink>
                                     </p>
                                 </div>
