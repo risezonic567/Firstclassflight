@@ -1,5 +1,6 @@
 import { HomeIcon } from 'lucide-react'
 import React from 'react'
+import { Helmet } from 'react-helmet'
 import { NavLink } from 'react-router'
 
 
@@ -7,6 +8,11 @@ export default function RefundPolicy() {
     return (
         <>
             <section>
+                <Helmet>
+                    <title>Disclaimer | First Class Flight Travel Information</title>
+                    <meta name='description' content='Read the First Class Flight disclaimer regarding travel information, airline content accuracy, booking services, and limitations of liability.'></meta>
+                    <link rel="canonical" href="https://www.first-classflight.com/disclaimer" />
+                </Helmet>
                 <div className='max-w-7xl mx-auto py-4 '>
                     <div className='w-full flex  bg-blue-200 text-black p-5 text-xl'>
                         <NavLink to={"/"} ><HomeIcon size={28} className=' hover:text-red-600 transition-all duration-300' /></NavLink>
@@ -29,7 +35,7 @@ export default function RefundPolicy() {
 
                     <div className='p-4 sm:p-5 md:p-6'>
                         <h2 className='text-xl sm:text-2xl md:text-3xl'>Accuracy of Information</h2>
-                        <p className='text-sm sm:text-base md:text-lg text-justify'>Although we do our best to provide correct and reliable information, we do not guarantee the correctness, completeness, or suitability (for any use by a customer) of the information provided on this website or sent by email, telephone, or any other means of communication. This includes (but is not limited to) the following:
+                        <p className='text-sm sm:text-base md:text-lg text-justify'>Although we do our best to provide correct and reliable information, we do not guarantee the correctness, completeness, or suitability (for any use by a customer) of the information provided on this website or sent by email, telephone, or any other means of communication. This includes but is not limited to the following:
                         </p>
                         <ul className='p-3 sm:p-4 md:p-5 list-disc list-inside pl-2'>
                             <li>Flight schedules</li>

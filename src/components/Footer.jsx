@@ -6,8 +6,6 @@ import {
   FaInstagram,
   FaWhatsapp,
   FaYoutube,
-  FaPinterest,
-  FaLinkedin,
 } from "react-icons/fa";
 import { MapPin, PhoneCall, Copyright } from "lucide-react";
 import gsap from "gsap";
@@ -55,7 +53,6 @@ export default function Footer() {
                 alt="logo"
               />
             </NavLink>
-
             <p className="text-sm text-gray-300 leading-relaxed">
               We provide premium first class flight deals, luxury travel planning,
               exclusive fares, and personalized support for seamless journeys.
@@ -63,52 +60,16 @@ export default function Footer() {
 
             {/* Social Icons */}
             <div className="flex gap-4">
-
-              <a
-                href="https://www.facebook.com/firstclassflight01/"
-                target="_blank"
-                rel="noreferrer"
-                className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-blue-600 transition"
-              >
-                <FaFacebook className="text-xl" />
-              </a>
-
-              <a
-                href="https://www.youtube.com/@FirstclassFlight-1"
-                target="_blank"
-                rel="noreferrer"
-                className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-blue-600 transition"
-              >
-                <FaYoutube className="text-xl" />
-              </a>
-
-              <a
-                href="https://www.pinterest.com/firstclassflight13/"
-                target="_blank"
-                rel="noreferrer"
-                className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-blue-600 transition"
-              >
-                <FaPinterest className="text-xl" />
-              </a>
-
-              <a
-                href="https://www.instagram.com/firstclassflight1/?hl=en"
-                target="_blank"
-                rel="noreferrer"
-                className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-blue-600 transition"
-              >
-                <FaInstagram className="text-xl" />
-              </a>
-
-              <a
-                href="https://www.linkedin.com/company/first-class-flight1/"
-                target="_blank"
-                rel="noreferrer"
-                className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-blue-600 transition"
-              >
-                <FaLinkedin className="text-xl" />
-              </a>
-
+              {[FaWhatsapp, FaInstagram, FaYoutube, FaFacebook].map(
+                (Icon, i) => (
+                  <div
+                    key={i}
+                    className="w-12 h-12 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center hover:bg-blue-600 transition duration-300 cursor-pointer"
+                  >
+                    <Icon className="text-xl hover:scale-110 transition" />
+                  </div>
+                )
+              )}
             </div>
           </div>
 
@@ -117,7 +78,6 @@ export default function Footer() {
             <h2 className="text-xl font-semibold mb-5 border-b border-white/20 pb-2">
               Quick Links
             </h2>
-
             <div className="space-y-3 text-gray-300">
               {["/", "/about-us", "/search-flights", "/support", "/blogs", "/contact-us"].map(
                 (path, i) => (
@@ -138,7 +98,6 @@ export default function Footer() {
             <h2 className="text-xl font-semibold mb-5 border-b border-white/20 pb-2">
               Support
             </h2>
-
             <div className="space-y-3 text-gray-300">
               {[
                 "/privacy-policy",
@@ -180,12 +139,11 @@ export default function Footer() {
 
             <div className="flex items-start gap-4">
               <PhoneCall size={20} />
-              <a href="tel:+8663075957" className="text-sm hover:text-blue-400">
-                +866 307-5957
+              <a href="tel:9155014125" className="text-sm hover:text-blue-400">
+                +91 91550 14125
               </a>
             </div>
           </div>
-
         </div>
 
         {/* Bottom Bar */}
@@ -194,7 +152,6 @@ export default function Footer() {
             <Copyright size={16} />
             2026 FirstClassFlight. All rights reserved.
           </div>
-
           <div>
             Developed & Designed by{" "}
             <span className="text-blue-400 font-semibold">Risezonic</span>
@@ -202,7 +159,7 @@ export default function Footer() {
         </div>
       </footer>
 
-      {/* Floating WhatsApp */}
+      {/* Floating Buttons */}
       <div className="fixed bottom-24 right-6 z-50">
         <a
           href="https://wa.me/9155014125"
@@ -215,7 +172,6 @@ export default function Footer() {
         </a>
       </div>
 
-      {/* Floating Call */}
       <div className="fixed bottom-6 right-6 z-50">
         <a
           href="tel:9155014125"

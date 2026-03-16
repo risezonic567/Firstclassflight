@@ -1,5 +1,6 @@
 import { Headphones, Mail, MapPin, PhoneCall, RefreshCcw, ShieldCheck, UserCheck } from 'lucide-react'
 import React from 'react'
+import { Helmet } from 'react-helmet'
 import { FaWhatsapp } from 'react-icons/fa'
 import { NavLink } from 'react-router'
 
@@ -7,7 +8,36 @@ export default function Contactus() {
     return (
         <>
             <section className="relative w-full h-[70vh] md:h-[85vh] overflow-hidden">
+                <Helmet>
+                    <title>Contact First Class Flight | Premium Flight Assistance</title>
+                    <meta name='description' content='Contact First Class Flight for assistance with first class and business class bookings, flight deals, ticket questions, and premium travel support.'></meta>
+                    <link rel="canonical" href="https://www.first-classflight.com/contact-us" />
+                    <script type="application/ld+json">
+                        {
+                            `{
+ "@context":"https://schema.org",
+ "@type":"ContactPage",
+ "url":"https://www.first-classflight.com/contact-us",
+ "publisher":{
+ "@type":"Organization",
+ "name":"First Class Flight",
+ "telephone":"+866 307-5957",
+ "email":"support@gmail.com",
+ "address":{
+ "@type":"PostalAddress",
+ "streetAddress":"A-16 17662 Irvine Blvd, Suite 9",
+ "addressLocality":"Tustin",
+ "addressRegion":"CA",
+ "postalCode":"92780",
+ "addressCountry":"US"
+ }
+ }
+}
 
+`
+                        }
+                    </script>
+                </Helmet>
                 <img
                     src="/images/contact.jpeg"
 
@@ -33,7 +63,7 @@ export default function Contactus() {
                 <div className=" mx-auto py-12 px-4 bg-blue-100 ">
                     <h2 className='text-center text-lg sm:text-xl md:text-2xl'>We’re Here for Your Premium Travel Needs</h2>
                     <p className='max-w-5xl mx-auto p-2 sm:p-3 md:p-4 text-gray-600 text-sm sm:text-base text-center'>
-                      We're here to help with any inquiries you have about booking your next first-class or business-class flight as well as answering any questions about quotes or providing help with existing reservations. With a first-class flight, you will experience exceptional customer service from initial contact until your flight is over with zero difficulties.
+                        We're here to help with any inquiries you have about booking your next first-class or business-class flight as well as answering any questions about quotes or providing help with existing reservations. With a first-class flight, you will experience exceptional customer service from initial contact until your flight is over with zero difficulties.
                     </p>
                 </div>
                 <div className="p-3 sm:p-4 md:p-5 grid grid-cols-1 md:grid-cols-2 gap-7">
@@ -67,7 +97,7 @@ export default function Contactus() {
                                             to="mailto:support@gmail.com"
                                             className="text-blue-600 hover:text-red-600  hover:underline transform hover:-translate-x-2 hover:decoration-2 hover:decoration-blue-800 transition-all duration-300 ease-in"
                                         >
-                                           info@firstclassflight.com
+                                            info@firstclassflight.com
                                         </NavLink>
                                     </p>
                                 </div>
@@ -86,7 +116,7 @@ export default function Contactus() {
                                             to="tel:8663075957"
                                             className="text-blue-600 hover:text-red-600  hover:underline transform hover:-translate-x-2 hover:decoration-2 hover:decoration-blue-800 transition-all duration-300 ease-in"
                                         >
-                                            +866 307-5957
+                                            8663075957
                                         </NavLink>
                                     </p>
                                 </div>

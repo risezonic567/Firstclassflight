@@ -1,11 +1,18 @@
 import { Home } from 'lucide-react'
 import React from 'react'
+import { Helmet } from 'react-helmet'
 import { NavLink } from 'react-router'
 
 export default function TermsAndCondition() {
     return (
         <>
             <section>
+                <Helmet>
+                    <title>Terms and Conditions | First Class Flight</title>
+                    <meta name='description' content='Read the terms and conditions for using First Class Flight services, including booking policies, payment guidelines, responsibilities, and travel rules.'></meta>
+                    <link rel="canonical" href="https://www.first-classflight.com/terms-and-conditions" />
+                    
+                </Helmet>
                 <div className='max-w-7xl mx-auto py-4 '>
                     <div className='w-full flex  bg-blue-200 text-black p-5 text-xl'>
                         <NavLink to={"/"} ><Home size={28} className=' hover:text-red-600 transition-all duration-300' /></NavLink>

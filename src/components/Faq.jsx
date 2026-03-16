@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { faqdata } from '../data/faq'
 import { FaPlus } from 'react-icons/fa';
+import { Helmet } from 'react-helmet';
 const tabs = [
     { label: "Search", key: "booking_search" },
     { label: "Payment", key: "payment_pricing" },
@@ -20,6 +21,11 @@ export default function Faq() {
     return (
         <>
             <section>
+                <Helmet>
+                    <title>First Class Flight FAQs | Premium Travel Questions</title>
+                    <meta name='description' content='Find answers to common questions about first class and business class flights, booking processes, pricing, and premium travel options.'></meta>
+                    <link rel="canonical" href="https://www.first-classflight.com/faq" />
+                </Helmet>
                 <div className='max-w-7xl mx-auto py-10 px-4'>
                     <h2 className='text-center text-xl sm:text-2xl md:text-3xl p-3 sm:p-4 md:p-5'>Frequntly Asked Questions</h2>
                     <div className='text-center m-auto'>

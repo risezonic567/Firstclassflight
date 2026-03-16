@@ -1,12 +1,17 @@
 import { Armchair, Globe, Headphones, PlaneTakeoff, RefreshCcw, RefreshCw, ShieldCheck, UserCheck, Zap } from 'lucide-react'
 import React from 'react'
+import { Helmet } from 'react-helmet'
 import { NavLink } from 'react-router'
 
 export default function Supports() {
     return (
         <>
             <section className="relative w-full h-[70vh] md:h-[85vh] overflow-hidden">
-
+              <Helmet>
+                <title>Customer Support | First Class Flight Travel Help</title>
+                <meta name='description' content='Get customer support for first class and business class bookings, ticket changes, travel assistance, and premium flight inquiries.'></meta>
+                <link rel="canonical" href="https://www.first-classflight.com/support" />
+              </Helmet>
                 <img
                     src="/images/about/support.jpeg"
 

@@ -1,5 +1,6 @@
 import { HomeIcon } from 'lucide-react'
 import React from 'react'
+
 import { NavLink } from 'react-router'
 
 
@@ -7,6 +8,7 @@ export default function RefundPolicy() {
     return (
         <>
             <section>
+              
                 <div className='max-w-7xl mx-auto py-4 '>
                     <div className='w-full flex  bg-blue-200 text-black p-5 text-xl'>
                         <NavLink to={"/"} ><HomeIcon size={28} className=' hover:text-red-600 transition-all duration-300' /></NavLink>

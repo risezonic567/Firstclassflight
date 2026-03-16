@@ -196,7 +196,7 @@ export default function About() {
 
 
                     <div className="order-1 md:order-2 relative group overflow-hidden">
-                        <img src="/dist\images\about\whychoose.jpeg" alt="" className='h-full w-full object-cover group-hover:scale-100' />
+                        <img src="/images/about/whychoose.jpeg" alt="" className='h-full w-full object-cover group-hover:scale-100' />
                     </div>
 
                 </div>

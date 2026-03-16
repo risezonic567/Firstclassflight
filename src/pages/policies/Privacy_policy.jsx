@@ -1,5 +1,6 @@
 import { HomeIcon } from 'lucide-react'
 import React from 'react'
+import { Helmet } from 'react-helmet'
 import { NavLink } from 'react-router'
 
 
@@ -7,6 +8,11 @@ export default function PrivacyPolicy() {
     return (
         <>
             <section>
+                <Helmet>
+                    <title>Privacy Policy | First Class Flight</title>
+                    <meta name='description' content='Review the privacy policy of First Class Flight to understand how personal information is collected, stored, used, and protected when using our website.'></meta>
+                    <link rel="canonical" href="https://www.first-classflight.com/privacy-policy" />
+                </Helmet>
                 <div className='max-w-7xl mx-auto py-4 '>
                     <div className='w-full flex  bg-blue-200 text-black p-5 text-xl'>
                         <NavLink to={"/"} ><HomeIcon size={28} className=' hover:text-red-600 transition-all duration-300' /></NavLink>

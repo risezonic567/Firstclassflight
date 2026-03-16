@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Helmet } from 'react-helmet';
 
 export default function SearchFlights() {
     let [open, setopen] = useState(null)
@@ -16,6 +17,30 @@ export default function SearchFlights() {
     return (
         <>
             <section className="relative w-full h-full overflow-hidden">
+                <Helmet>
+                    <title>Search First & Business Class Flights | Compare Deals</title>
+                    <meta name='description' content='Search and compare first class flights and business class flight deals worldwide. Find premium airline tickets and book the best luxury travel fares.'></meta>
+                    <link rel="canonical" href="https://www.first-classflight.com/search-flights" />
+                    <script type="application/ld+json">
+                        {
+                            `{
+ "@context":"https://schema.org",
+ "@type":"Service",
+ "serviceType":"Flight Booking Service",
+ "provider":{
+ "@type":"TravelAgency",
+ "name":"First Class Flight",
+ "url":"https://www.first-classflight.com/"
+ },
+ "areaServed":"Worldwide",
+ "description":"Search and compare first class and business class flights to find premium airline deals for international travel.",
+ "url":"https://www.first-classflight.com/search-flights"
+}
+
+`
+                        }
+                    </script>
+                </Helmet>
                 <img
                     src="/images/home/search.jpeg"
                     className="absolute inset-0 w-full h-full object-cover"
