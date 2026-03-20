@@ -57,7 +57,7 @@ export default function Testimonials() {
     <>
 
       <section className="max-w-7xl mx-auto px-4 py-12">
-        <h2 className="text-3xl font-bold text-center mb-8">
+        <h2 className="text-3xl font-bold text-center mb-8 text-red-600">
           What Our Clients Say
         </h2>
 
@@ -123,7 +123,7 @@ export default function Testimonials() {
       <motion.button
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
-        className="px-8 py-3 rounded-xl bg-blue-600 hover:bg-blue-700 
+        className="px-8 py-3 rounded-xl bg-red-600 hover:bg-blue-700 
                    transition-all duration-300"
       >
         Get Started

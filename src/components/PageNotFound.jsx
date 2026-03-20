@@ -9,7 +9,7 @@ export default function NotFound() {
         
       
         <div className="flex justify-center mb-6">
-          <Plane className="w-14 h-14 text-blue-600" />
+          <Plane className="w-14 h-14 text-red-600" />
         </div>
 
 
@@ -31,14 +31,14 @@ export default function NotFound() {
         <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
           <Link
             to="/"
-            className="bg-blue-600 text-white px-6 py-3 rounded-full font-medium hover:bg-blue-9 00 transition duration-300"
+            className="bg-red-600 text-white px-6 py-3 rounded-full font-medium hover:bg-blue-9 00 transition duration-300"
           >
             Back to Home
           </Link>
 
           <a
             href="tel:+1-844-821-5950"
-            className="border border-blue-600 text-blue-600 px-6 py-3 rounded-full font-medium hover:bg-teal-50 transition duration-300"
+            className="border border-red-600 text-red-600 px-6 py-3 rounded-full font-medium hover:bg-teal-50 transition duration-300"
           >
             Contact Support
           </a>

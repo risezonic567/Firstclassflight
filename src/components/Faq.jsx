@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { faqdata } from '../data/faq'
+import { faqdata } from '../../../firstclassflight/src/data/faq'
 import { FaPlus } from 'react-icons/fa';
 import { Helmet } from 'react-helmet';
 const tabs = [
@@ -27,11 +27,11 @@ export default function Faq() {
                     <link rel="canonical" href="https://www.first-classflight.com/faq" />
                 </Helmet>
                 <div className='max-w-7xl mx-auto py-10 px-4'>
-                    <h2 className='text-center text-xl sm:text-2xl md:text-3xl p-3 sm:p-4 md:p-5'>Frequntly Asked Questions</h2>
+                    <h1 className='text-center text-xl sm:text-2xl md:text-3xl p-3 sm:p-4 md:p-5 text-red-600'>Frequntly Asked Questions</h1>
                     <div className='text-center m-auto'>
                         {
                             tabs.map((item, id) => (
-                                <button key={id} onClick={() => settab(item.key)} className={`cursor-pointer bg-blue-950 text-center p-1 sm:p-2 md:p-3 text-white rounded gap-10 ms-5 mt-3 ${item.key === tab ? 'bg-red-500 transition duration-300 cursor-pointer' : ''}`}>
+                                <button key={id} onClick={() => settab(item.key)} className={`cursor-pointer bg-gray-600/90 text-center p-1 sm:p-2 md:p-3 text-white rounded gap-10 ms-5 mt-3 ${item.key === tab ? 'bg-red-500 transition duration-300 cursor-pointer' : ''}`}>
                                     {item.label}
                                 </button>
                             ))
@@ -48,13 +48,13 @@ export default function Faq() {
                                     let openIndex = open === id
                                     return (
                                         <div key={id} className='border rounded-2xl overflow-hidden '>
-                                            <button className={`flex items-center justify-between p-4 md:p-5 text-left w-full ${openIndex ? "bg-blue-900 text-white" : ""}`} onClick={() => setopen(openIndex ? null : id)}>
+                                            <button className={`flex items-center justify-between p-4 md:p-5 text-left w-full ${openIndex ? "bg-red-600 text-white" : ""}`} onClick={() => setopen(openIndex ? null : id)}>
 
-                                                <span className=''>{item.question}</span>
+                                                <h3 className=''>{item.question}</h3>
                                                 <span className={`inline-block text-xl transition-transform duration-300 ${openIndex ? "rotate-45" : "rotate-0"}`}><FaPlus className='text-2xl' /></span>
                                             </button>
                                             <div className={`grid transition-all duration-300 ease-in-out ${openIndex ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}>
-                                                <div className={`overflow-hidden px-4 md:px-5 pb-4 text-gray-600 ${openIndex ? "bg-blue-100 text-dark-400" : ""}`}>
+                                                <div className={`overflow-hidden px-4 md:px-5 pb-4 text-gray-600 ${openIndex ? "bg-red-100 text-dark-400" : ""}`}>
                                                     {item.answer}
                                                 </div>
                                             </div>

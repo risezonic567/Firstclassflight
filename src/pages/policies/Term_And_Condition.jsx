@@ -24,7 +24,7 @@ export default function TermsAndCondition() {
                         </p>
                     </div>
                     <div className='p-4 sm:p-5 md:p-6'>
-                        <h2 className='text-xl sm:text-2xl md:text-3xl'>Nature of Our Services</h2>
+                        <h1 className='text-xl sm:text-2xl md:text-3xl'>Nature of Our Services</h1>
                         <p className='text-sm sm:text-base md:text-lg text-justify'>
                             We will function as a travel agency and an intermediary between clients and the products offered by suppliers, including airlines. We do not own or control airlines, but we help our clients purchase airline tickets.
                         </p>
@@ -128,8 +128,8 @@ export default function TermsAndCondition() {
                             17662 Irvine Blvd, Suite 9
                             Tustin, CA 92780, USA
                         </p>
-                        <p className='text-sm sm:text-base md:text-lg text-justify'>Email: <NavLink to={'mailto:info@firstclassflight.com'} className={' text-blue-600 hover:underline hover:decoration-2 hover:decoration-blue-600 hover:text-red-300 transition'}>info@firstclassflight.com</NavLink></p>
-                        <p className='text-sm sm:text-base md:text-lg text-justify'> Phone: <NavLink to={'tel:8663075957'} className={'text-blue-600 hover:underline hover:decoration-2 hover:decoration-blue-600 hover:text-red-300 transition'}>8663075957</NavLink></p>
+                        <p className='text-sm sm:text-base md:text-lg text-justify'>Email: <NavLink to={'mailto:info@firstclassflight.com'} className={' text-red-600 hover:underline hover:decoration-2 hover:decoration-red-600 hover:text-red-300 transition'}>info@firstclassflight.com</NavLink></p>
+                        <p className='text-sm sm:text-base md:text-lg text-justify'> Phone: <NavLink to={'tel:8663075957'} className={'text-red-600 hover:underline hover:decoration-2 hover:decoration-red-600 hover:text-red-300 transition'}>8663075957</NavLink></p>
 
                     </div>
                 </div>

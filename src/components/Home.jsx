@@ -106,6 +106,7 @@ export default function Home() {
                     muted
                     playsInline
                     className="absolute inset-0 w-full h-full object-cover"
+                
                 />
 
 
@@ -120,7 +121,7 @@ export default function Home() {
                    </div>
                     <div className='max-w-70 mx-auto flex justify-between items center'>
                         <div>
-                        <NavLink to={'/search-flights'} className={`p-4 mx-auto bg-blue-600  hover:bg-blue-800 rounded-xl text-white`}>Search Flights</NavLink>
+                        <NavLink to={'/search-flights'} className={`p-4 mx-auto bg-red-600  hover:bg-red-800 rounded-xl text-white`}>Search Flights</NavLink>
                     </div>
                      <div>
                         <NavLink to={'tel:8663075957'} className={`p-4 mx-auto bg-gray-600 hover:bg-black rounded-xl text-white`}>Call Us Now</NavLink>
@@ -138,7 +139,7 @@ export default function Home() {
                     <div className='max-w-7xl mx-auto px-3 py-12 grid grid-cols-1 md:grid-cols-2 gap-5'>
                         <div className='order-1 md:order-1'>
                             <div>
-                                <h2 className='text-lg sm:text-xl md:text-2xl text-center'> Why Travelers Trust Our Flight Experts</h2>
+                                <h2 className='text-lg sm:text-xl md:text-2xl text-center text-red-600'> Why Travelers Trust Our Flight Experts</h2>
                                 <p className='mt-1 text-sm sm:text-base text-justify text-gray-600 font-semibold'>
                                     Choosing a premium cabin isn’t only about finding the perfect seat; it's also about how you will be treated from the moment you book until you reach the destination. We are trusted by our customers due to the level of detail we provide, including flexible itineraries, affordable prices, and true personal assistance when a trip changes.
 
@@ -150,7 +151,7 @@ export default function Home() {
                         </div>
                         <div className='order-2 md:order-2'>
                             <div className='relative group  overflow-hidden transition'>
-                                <img src="/images/home/Why Travelers Trust Our Flight Experts.jpg.jpeg" className='h-full w-full object-cover duration-300 group-hover:scale-110 ' alt="" />
+                                <img src="/images/home/Why Travelers Trust Our Flight Experts.jpg.jpeg" className='h-full w-full object-cover duration-300 group-hover:scale-110 ' alt="Why Travelers Trust Our Flight Experts" />
                             </div>
                         </div>
                     </div>
@@ -164,7 +165,7 @@ export default function Home() {
                     <div className='max-w-7xl mx-auto px-3 py-12 grid grid-cols-1 md:grid-cols-2 gap-5'>
                         <div className='order-2 md:order-2'>
                             <div>
-                                <h2 className='text-xl sm:text-2xl md:text-3xl text-center'>Corporate Travel Management
+                                <h2 className='text-xl sm:text-2xl md:text-3xl text-center text-red-600'>Corporate Travel Management
                                 </h2>
                                 <h3 className='text-sm sm:text-lg md:text-xl text-gray-600 text-center '>Premium flight solutions designed for modern business teams.
                                 </h3>
@@ -185,7 +186,7 @@ export default function Home() {
                         </div>
                         <div className='order-1 md:order-1'>
                             <div className='relative group  overflow-hidden transition'>
-                                <img src="/images/home/Corporate.jpg.jpeg" className='h-full w-full object-cover duration-300 group-hover:scale-110 ' alt="" />
+                                <img src="/images/home/Corporate.jpg.jpeg" className='h-full w-full object-cover duration-300 group-hover:scale-110 ' alt="Corporate Travel Management" />
                             </div>
                         </div>
                     </div>
@@ -197,7 +198,7 @@ export default function Home() {
                     <div className=' grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 p-5'>
                         {
                             ourServices.map((item, id) => (
-                                <div key={id} className='rounded-2xl shadow-lg text-blue-600 shadow-blue-600 z-50 transition-all duration-300 ease-in hover:-translate-y-4'>
+                                <div key={id} className='rounded-2xl shadow-lg text-red-600 shadow-red-600 z-50 transition-all duration-300 ease-in hover:-translate-y-4'>
                                     <span className="text-3xl justify-center flex p-5 items-center">
                                         {item.icon === "FaPlaneDeparture" && <FaPlaneDeparture />}
                                         {item.icon === "FaCrown" && <FaCrown />}
@@ -224,7 +225,7 @@ export default function Home() {
                     <div className='max-w-7xl mx-auto px-3 py-12 grid grid-cols-1 md:grid-cols-2 gap-5'>
                         <div className='order-1 md:order-1'>
                             <div>
-                                <h2 className='text-xl sm:text-2xl md:text-3xl text-center'>Ready to Book Your Premium Flight?</h2>
+                                <h2 className='text-xl sm:text-2xl md:text-3xl text-center text-red-600'>Ready to Book Your Premium Flight?</h2>
                                 <h3 className='text-sm sm:text-lg md:text-xl text-gray-600 text-center '>Let our specialists help you find your next first-class ticket for travel.
                                 </h3>
                                 <p className='mt-3 text-sm sm:text-base text-justify text-gray-600 font-semibold'>
@@ -236,7 +237,7 @@ export default function Home() {
                         </div>
                         <div className='order-2 md:order-2'>
                             <div className='relative group  overflow-hidden transition'>
-                                <img src="/images/home/Ready to Book  Your Premium Flight.jpg.jpeg" className='h-full w-full object-cover duration-300 group-hover:scale-110 ' alt="" />
+                                <img src="/images/home/Ready to Book  Your Premium Flight.jpg.jpeg" className='h-full w-full object-cover duration-300 group-hover:scale-110 ' alt="Ready to Book Your Premium Flight?" />
                             </div>
                         </div>
                     </div>
@@ -247,7 +248,7 @@ export default function Home() {
                 <div data-aos="flip-up">
                     <div className=' grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 p-5'>
 
-                        <div className='rounded-2xl shadow-lg text-blue-600 shadow-blue-600 z-50 transition-all duration-300 ease-in hover:-translate-y-4'>
+                        <div className='rounded-2xl shadow-lg text-red-600 shadow-red-600 z-50 transition-all duration-300 ease-in hover:-translate-y-4'>
                             <span className="text-3xl justify-center flex p-5 items-center">
                                 <PhoneCall size={32} />
                             </span>
@@ -260,7 +261,7 @@ export default function Home() {
                             </div>
 
                         </div>
-                        <div className='rounded-2xl shadow-lg text-blue-600 shadow-blue-600 z-50 transition-all duration-300 ease-in hover:-translate-y-4'>
+                        <div className='rounded-2xl shadow-lg text-red-600 shadow-red-600 z-50 transition-all duration-300 ease-in hover:-translate-y-4'>
                             <span className="text-3xl justify-center flex p-5 items-center">
                                 <FaEnvelope className='text-4xl' />
                             </span>
@@ -273,7 +274,7 @@ export default function Home() {
                             </div>
 
                         </div>
-                        <div className='rounded-2xl shadow-lg text-blue-600 shadow-blue-600 z-50 transition-all duration-300 ease-in hover:-translate-y-4'>
+                        <div className='rounded-2xl shadow-lg text-red-600 shadow-red-600 z-50 transition-all duration-300 ease-in hover:-translate-y-4'>
                             <span className="text-3xl justify-center flex p-5 items-center">
                                 <FaWhatsapp className='text-4xl' />
                             </span>
@@ -295,20 +296,20 @@ export default function Home() {
             <section>
                 <div data-aos="zoom-out-down">
                     <div className="max-w-7xl mx-auto py-12 px-4">
-                        <h2 className='text-xl sm:text-2xl md:text-3xl text-center mb-4'>Frequently Asked Questions</h2>
+                        <h2 className='text-xl sm:text-2xl md:text-3xl text-center mb-4 text-red-600'>Frequently Asked Questions</h2>
                         <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
                             {
                                 faq.map((item, id) => {
                                     let openIndex = open === id
                                     return (
                                         <div key={id} className='border rounded-2xl overflow-hidden '>
-                                            <button className={`flex items-center justify-between p-4 md:p-5 text-left w-full ${openIndex ? "bg-blue-900 text-white" : ""}`} onClick={() => setopen(openIndex ? null : id)}>
+                                            <button className={`flex items-center justify-between p-4 md:p-5 text-left w-full ${openIndex ? "bg-red-600 text-white" : ""}`} onClick={() => setopen(openIndex ? null : id)}>
 
                                                 <span className=''>{item.question}</span>
                                                 <span className={`inline-block text-xl transition-transform duration-300 ${openIndex ? "rotate-45" : "rotate-0"}`}><FaPlus className='text-2xl' /></span>
                                             </button>
                                             <div className={`grid transition-all duration-300 ease-in-out ${openIndex ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}>
-                                                <div className={`overflow-hidden px-4 md:px-5 pb-4 text-gray-600 ${openIndex ? "bg-blue-100 text-dark-400" : ""}`}>
+                                                <div className={`overflow-hidden px-4 md:px-5 pb-4 text-gray-600 ${openIndex ? "bg-red-100 text-dark-400" : ""}`}>
                                                     {item.answer}
                                                 </div>
                                             </div>
@@ -324,4 +325,3 @@ export default function Home() {
         </>
     )
 }
-4

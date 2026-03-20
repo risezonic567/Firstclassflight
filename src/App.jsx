@@ -6,8 +6,6 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Loader from './components/Loader'
 import NotFound from './components/PageNotFound';
-import BlogPage from './pages/BlogPage';
-import SingleBlog from './pages/SingleBlog';
 
 let Home = lazy(() => import('./pages/Homepage'))
 let About = lazy(() => import('./pages/Aboutpage'))
@@ -45,8 +43,6 @@ export default function App() {
             <Route path="/search-flights" element={<SearchFlights />} />
             <Route path="/support" element={<Supports />} />
             <Route path="/disclaimer" element={<Disclaimers />} />
-            <Route path='/blog' element={<BlogPage/>}/>
-            <Route path='/blog/:slug' element={<SingleBlog/>}/>
             <Route path='/*' element={<NotFound />} />
           </Routes>
         </Suspense>

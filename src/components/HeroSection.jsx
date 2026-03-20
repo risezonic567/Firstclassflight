@@ -95,8 +95,8 @@ export default function HeroSection() {
         <>
             <section className='max-w-7xl mx-auto py-5 px-3'>
                 <div className='p-2 sm:p-3 md:p-4'>
-                    <h2 className='text-lg sm:text-xl md:text-2xl text-center'>Luxury travel, smarter pricing, and personal service for executives and premium travelers.</h2>
-                    <p className='text-sm sm:text-base text-justify text-gray-600 font-semibold py-3'>Traveling in a premium cabin shouldn’t mean overpaying. At First Class Flight, we assist executives, regular travelers, and corporate groups in finding amazing rates for long-haul premium flights. Our experts are available to uncover negotiated, discounted, or privately negotiated rates/shuttles that are not published in the public reservation systems.</p>
+                    <h2 className='max-w-3xl text-red-600 text-lg sm:text-xl py-3 md:text-2xl mx-auto text-center'>Luxury travel, smarter pricing, and personal service for executives and premium travelers.</h2>
+                    <p className='text-sm sm:text-base text-center py-3 max-w-5xl mx-auto text-gray-600 font-semibold py-3'>Traveling in a premium cabin shouldn’t mean overpaying. At First Class Flight, we assist executives, regular travelers, and corporate groups in finding amazing rates for long-haul premium flights. Our experts are available to uncover negotiated, discounted, or privately negotiated rates/shuttles that are not published in the public reservation systems.</p>
                 </div>
                 <div className='p-2 sm:p-3 md:p-4 relative pb-15'>
                     <Swiper
@@ -122,10 +122,10 @@ export default function HeroSection() {
 
                                     <div className='' >
                                         <div className='relative overflow-hidden group transition'>
-                                            <img src={item.img} alt="" className=' h-full w-full transition-all duration-300 group-hover:scale-110' />
+                                            <img src={item.img}  className=' h-full w-full transition-all duration-300 group-hover:scale-110' alt={`${item.img}`} />
                                         </div>
                                         <div className='p-1 sm:p-2 md:p-3'>
-                                            <h2 className='text-lg sm:text-xl md:text-2xl text-center'>{item.country}</h2>
+                                            <h2 className='text-lg text-red-600 py-3 sm:text-xl md:text-2xl text-center'>{item.country}</h2>
                                             <p className='text-sm sm:text-base text-justify'>
                                                 {item.description}
                                             </p>

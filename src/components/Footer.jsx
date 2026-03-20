@@ -40,7 +40,7 @@ export default function Footer() {
     <>
       <footer
         ref={footerRef}
-        className="w-full bg-gradient-to-br from-blue-950 via-blue-900 to-blue-800 text-white pt-16 pb-8"
+        className="w-full bg-gradient-to-r from-gray-700/40 via-gray-800/80 to-gray-900/90 text-white pt-16 pb-8"
       >
         <div className="max-w-7xl mx-auto px-6 grid gap-12 md:grid-cols-2 lg:grid-cols-4">
 
@@ -64,7 +64,7 @@ export default function Footer() {
                 (Icon, i) => (
                   <div
                     key={i}
-                    className="w-12 h-12 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center hover:bg-blue-600 transition duration-300 cursor-pointer"
+                    className="w-12 h-12 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center hover:bg-red-600 transition duration-300 cursor-pointer"
                   >
                     <Icon className="text-xl hover:scale-110 transition" />
                   </div>
@@ -79,12 +79,12 @@ export default function Footer() {
               Quick Links
             </h2>
             <div className="space-y-3 text-gray-300">
-              {["/", "/about-us", "/search-flights", "/support", "/blog", "/contact-us"].map(
+              {["/", "/about-us", "/search-flights", "/support", "/blogs", "/contact-us"].map(
                 (path, i) => (
                   <NavLink
                     key={i}
                     to={path}
-                    className="block hover:text-blue-400 transition"
+                    className="block hover:text-red-400 transition"
                   >
                     {path.replace("/", "").replace("-", " ") || "Home"}
                   </NavLink>
@@ -109,7 +109,7 @@ export default function Footer() {
                 <NavLink
                   key={i}
                   to={path}
-                  className="block hover:text-blue-400 transition"
+                  className="block hover:text-red-400 transition"
                 >
                   {path.replace("/", "").replace(/-/g, " ")}
                 </NavLink>
@@ -132,14 +132,14 @@ export default function Footer() {
 
             <div className="flex items-start gap-4">
               <FaEnvelope size={20} />
-              <a href="mailto:support@gmail.com" className="text-sm hover:text-blue-400">
+              <a href="mailto:support@gmail.com" className="text-sm hover:text-red-400">
                 support@gmail.com
               </a>
             </div>
 
             <div className="flex items-start gap-4">
               <PhoneCall size={20} />
-              <a href="tel:9155014125" className="text-sm hover:text-blue-400">
+              <a href="tel:9155014125" className="text-sm hover:text-red-400">
                 +91 91550 14125
               </a>
             </div>
@@ -154,7 +154,7 @@ export default function Footer() {
           </div>
           <div>
             Developed & Designed by{" "}
-            <span className="text-blue-400 font-semibold">Risezonic</span>
+            <span className="text-red-400 font-semibold">Risezonic</span>
           </div>
         </div>
       </footer>
@@ -175,9 +175,9 @@ export default function Footer() {
       <div className="fixed bottom-6 right-6 z-50">
         <a
           href="tel:9155014125"
-          className="relative w-14 h-14 bg-blue-600 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition"
+          className="relative w-14 h-14 bg-red-700 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition"
         >
-          <span className="absolute inset-0 rounded-full bg-blue-400 animate-ping opacity-20"></span>
+          <span className="absolute inset-0 rounded-full bg-red-400 animate-ping opacity-20"></span>
           <PhoneCall className="text-white relative z-10" size={24} />
         </a>
       </div>

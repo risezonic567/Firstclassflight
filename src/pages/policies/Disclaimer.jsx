@@ -28,7 +28,7 @@ export default function RefundPolicy() {
                     </div>
 
                     <div className='p-4 sm:p-5 md:p-6'>
-                        <h2 className='text-xl sm:text-2xl md:text-3xl'>Not a Carrier</h2>
+                        <h1 className='text-xl sm:text-2xl md:text-3xl'>Not a Carrier</h1>
                         <p className='text-sm sm:text-base md:text-lg text-justify'>First Class Flight is an agency and intermediary for airline tickets and travel bookings. We do not directly operate, control, or manage any airlines, transportation providers, or third-party providers of travel. All schedules, change fees, cancellation fees, flight availability, policies, etc. regarding air travel are completely at the discretion of the carrier/airline or respective provider.
                         </p>
                     </div>
@@ -105,8 +105,8 @@ export default function RefundPolicy() {
                         <h2 className='text-xl sm:text-2xl md:text-3xl'>First Class Flight</h2>
 
                         <p className='text-sm sm:text-base md:text-lg text-justify'>17662 Irvine Blvd, Suite 9, Tustin, CA 92780, USA                                        </p>
-                        <p className='text-sm sm:text-base md:text-lg text-justify'>Email: <NavLink to={'mailto:info@firstclassflight.com'} className={' text-blue-600 hover:underline hover:decoration-2 hover:decoration-blue-600 hover:text-red-300 transition'}>info@firstclassflight.com</NavLink></p>
-                        <p className='text-sm sm:text-base md:text-lg text-justify'> Phone: <NavLink to={'tel:8663075957'} className={'text-blue-600 hover:underline hover:decoration-2 hover:decoration-blue-600 hover:text-red-300 transition'}>8663075957</NavLink></p>
+                        <p className='text-sm sm:text-base md:text-lg text-justify'>Email: <NavLink to={'mailto:info@firstclassflight.com'} className={' text-red-600 hover:underline hover:decoration-2 hover:decoration-red-600 hover:text-red-300 transition'}>info@firstclassflight.com</NavLink></p>
+                        <p className='text-sm sm:text-base md:text-lg text-justify'> Phone: <NavLink to={'tel:8663075957'} className={'text-red-600 hover:underline hover:decoration-2 hover:decoration-red-600 hover:text-red-300 transition'}>8663075957</NavLink></p>
 
                     </div>
 

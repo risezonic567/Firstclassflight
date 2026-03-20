@@ -1,6 +1,6 @@
 import { HomeIcon } from 'lucide-react'
 import React from 'react'
-
+import { Helmet } from 'react-helmet'
 import { NavLink } from 'react-router'
 
 
@@ -8,7 +8,12 @@ export default function RefundPolicy() {
     return (
         <>
             <section>
-              
+               <Helmet>
+                                  <title>Refund and Cancellation Policy | First Class Flight</title>
+                                  <meta name='description' content='Read the official refund and cancellation policy of First Class Flight. Learn about booking cancellations, refund eligibility, processing time, and terms for flight reservations'></meta>
+                                  <link rel="canonical" href="https://www.first-classflight.com/refund-and-cancellation-policy" />
+                                  
+                              </Helmet>
                 <div className='max-w-7xl mx-auto py-4 '>
                     <div className='w-full flex  bg-blue-200 text-black p-5 text-xl'>
                         <NavLink to={"/"} ><HomeIcon size={28} className=' hover:text-red-600 transition-all duration-300' /></NavLink>
@@ -24,7 +29,7 @@ export default function RefundPolicy() {
                     </div>
 
                     <div className='p-4 sm:p-5 md:p-6'>
-                        <h2 className='text-xl sm:text-2xl md:text-3xl'>General Policy</h2>
+                        <h1 className='text-xl sm:text-2xl md:text-3xl'>General Policy</h1>
                         <p className='text-sm sm:text-base md:text-lg text-justify'>The fare rules, restrictions, and conditions applicable to your itinerary are established by the airline. These vary by fare class, fare type, airline, and routing. The fare conditions will dictate the refundability of a ticket, i.e., if it is 100% refundable, partly refundable, or non-refundable, as well as provide refunds based on associated costs, change options, and any applicable penalties that may apply based on the individual ticket purchased at the time of original travel booking.
                         </p>
                         <p className='text-sm sm:text-base md:text-lg text-justify'>
@@ -119,8 +124,8 @@ export default function RefundPolicy() {
                                             <h2 className='text-xl sm:text-2xl md:text-3xl'>Contact for Refund Requests</h2>
                     
                                             <p className='text-sm sm:text-base md:text-lg text-justify'>To request a refund or cancellation:                                            </p>
-                                            <p className='text-sm sm:text-base md:text-lg text-justify'>Email: <NavLink to={'mailto:info@firstclassflight.com'} className={' text-blue-600 hover:underline hover:decoration-2 hover:decoration-blue-600 hover:text-red-300 transition'}>info@firstclassflight.com</NavLink></p>
-                                            <p className='text-sm sm:text-base md:text-lg text-justify'> Phone: <NavLink to={'tel:8663075957'} className={'text-blue-600 hover:underline hover:decoration-2 hover:decoration-blue-600 hover:text-red-300 transition'}>8663075957</NavLink></p>
+                                            <p className='text-sm sm:text-base md:text-lg text-justify'>Email: <NavLink to={'mailto:info@firstclassflight.com'} className={' text-red-600 hover:underline hover:decoration-2 hover:decoration-red-600 hover:text-red-300 transition'}>info@firstclassflight.com</NavLink></p>
+                                            <p className='text-sm sm:text-base md:text-lg text-justify'> Phone: <NavLink to={'tel:8663075957'} className={'text-red-600 hover:underline hover:decoration-2 hover:decoration-red-600 hover:text-red-300 transition'}>8663075957</NavLink></p>
                     
                                         </div>
 

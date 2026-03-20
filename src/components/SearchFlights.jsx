@@ -55,9 +55,9 @@ export default function SearchFlights() {
                             <h1 className="text-3xl md:text-5xl font-bold">
                                 Premium Business Class Flights at Exclusive Fares
                             </h1>
-                            <p className="mt-2 text-white/80">
+                            <h3 className="mt-2 text-white/80">
                                 Search Flights & Fly Premium
-                            </p>
+                            </h3>
                         </div>
 
 
@@ -65,7 +65,7 @@ export default function SearchFlights() {
                             <button
                                 onClick={() => setTripType("oneway")}
                                 className={`px-5 py-2 rounded-full text-sm font-semibold transition ${tripType === "oneway"
-                                    ? "bg-teal-600 text-white"
+                                    ? "bg-red-600 text-white"
                                     : "bg-white/70 text-gray-800"
                                     }`}
                             >
@@ -74,7 +74,7 @@ export default function SearchFlights() {
                             <button
                                 onClick={() => setTripType("roundtrip")}
                                 className={`px-5 py-2 rounded-full text-sm font-semibold transition ${tripType === "roundtrip"
-                                    ? "bg-teal-600 text-white"
+                                    ? "bg-red-600 text-white"
                                     : "bg-white/70 text-gray-800"
                                     }`}
                             >
@@ -165,7 +165,7 @@ export default function SearchFlights() {
                             <div className="md:col-span-6 mt-4 text-center">
                                 <button
                                     type="submit"
-                                    className="bg-teal-600 hover:bg-teal-700 transition text-white px-10 py-3 rounded-full font-semibold shadow-xl hover:scale-105"
+                                    className="bg-red-600 hover:bg-red-700 transition text-white px-10 py-3 rounded-full font-semibold shadow-xl hover:scale-105"
                                 >
                                     Search Flights
                                 </button>

@@ -26,7 +26,7 @@ export default function PrivacyPolicy() {
                     </div>
 
                     <div className='p-4 sm:p-5 md:p-6'>
-                        <h2 className='text-xl sm:text-2xl md:text-3xl'>Information We Collect</h2>
+                        <h1 className='text-xl sm:text-2xl md:text-3xl'>Information We Collect</h1>
                         <p className='text-sm sm:text-base md:text-lg text-justify'>In order to provide our services, we may gather the following types of personal and travel information:
                         </p>
                         <div className='ms-3 p-4 sm:p-5 md:p-6'>
@@ -145,8 +145,8 @@ export default function PrivacyPolicy() {
                             17662 Irvine Blvd, Suite 9
                             Tustin, CA 92780, USA
                         </p>
-                        <p className='text-sm sm:text-base md:text-lg text-justify'>Email: <NavLink to={'mailto:info@firstclassflight.com'} className={' text-blue-600 hover:underline hover:decoration-2 hover:decoration-blue-600 hover:text-red-300 transition'}>info@firstclassflight.com</NavLink></p>
-                        <p className='text-sm sm:text-base md:text-lg text-justify'> Phone: <NavLink to={'tel:8663075957'} className={'text-blue-600 hover:underline hover:decoration-2 hover:decoration-blue-600 hover:text-red-300 transition'}>8663075957</NavLink></p>
+                        <p className='text-sm sm:text-base md:text-lg text-justify'>Email: <NavLink to={'mailto:info@firstclassflight.com'} className={' text-red-600 hover:underline hover:decoration-2 hover:decoration-red-600 hover:text-red-300 transition'}>info@firstclassflight.com</NavLink></p>
+                        <p className='text-sm sm:text-base md:text-lg text-justify'> Phone: <NavLink to={'tel:8663075957'} className={'text-red-600 hover:underline hover:decoration-2 hover:decoration-red-600 hover:text-red-300 transition'}>8663075957</NavLink></p>
 
                     </div>
 
