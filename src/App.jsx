@@ -45,7 +45,7 @@ export default function App() {
             <Route path="/search-flights" element={<SearchFlights />} />
             <Route path="/support" element={<Supports />} />
             <Route path="/disclaimer" element={<Disclaimers />} />
-            <Route path='/blog' element={<BlogPage/>}/>
+            <Route path='/blogs' element={<BlogPage/>}/>
             <Route path='/blog/:slug' element={<SingleBlog/>}/>
             <Route path='/*' element={<NotFound />} />
           </Routes>

@@ -79,7 +79,7 @@ export default function Footer() {
               Quick Links
             </h2>
             <div className="space-y-3 text-gray-300">
-              {["/", "/about-us", "/search-flights", "/support", "/blog", "/contact-us"].map(
+              {["/", "/about-us", "/search-flights", "/support", "/blogs", "/contact-us"].map(
                 (path, i) => (
                   <NavLink
                     key={i}
