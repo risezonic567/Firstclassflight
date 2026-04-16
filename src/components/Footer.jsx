@@ -5,6 +5,7 @@ import {
   FaFacebook,
   FaInstagram,
   FaWhatsapp,
+  
   FaYoutube,
 } from "react-icons/fa";
 import { MapPin, PhoneCall, Copyright } from "lucide-react";
@@ -60,14 +61,14 @@ export default function Footer() {
 
             {/* Social Icons */}
             <div className="flex gap-4">
-              {[FaWhatsapp, FaInstagram, FaYoutube, FaFacebook].map(
+              {[{i:FaInstagram,link:"https://www.instagram.com/firstclassflight1/?hl=en"}, {i:FaYoutube,link:"https://www.youtube.com/@FirstclassFlight-1"}, {i:FaFacebook,link:"https://www.facebook.com/firstclassflight01/"}].map(
                 (Icon, i) => (
                   <div
                     key={i}
                     className="w-12 h-12 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center hover:bg-red-600 transition duration-300 cursor-pointer"
                   >
-                    <Icon className="text-xl hover:scale-110 transition" />
-                  </div>
+                   <NavLink to={Icon.link}> <Icon.i className="text-xl hover:scale-110 transition" /></NavLink>
+                  </div> 
                 )
               )}
             </div>
