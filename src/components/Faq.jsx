@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import { faqdata } from '../../../firstclassflight/src/data/faq'
 import { FaPlus } from 'react-icons/fa';
 import { Helmet } from 'react-helmet';
+import { faqdata } from '../data/faqdata';
 const tabs = [
     { label: "Search", key: "booking_search" },
     { label: "Payment", key: "payment_pricing" },

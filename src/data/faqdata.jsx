@@ -1,5 +1,4 @@
-export let faqdata=
-    {
+export let faqdata={
   "booking_search": [
     {
       "question": "How do I search for flights on your website?",
