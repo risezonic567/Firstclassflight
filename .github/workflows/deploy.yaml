@@ -18,7 +18,7 @@ jobs:
         key: ${{secrets.SSH_KEY}}
         script: |
        
-         cd /var/www/FIRSTCLASSFLIGHT
+         cd /var/www/Fristclassflight
 
          git pull origin main
 
