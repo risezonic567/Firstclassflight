@@ -96,7 +96,7 @@ export default function Contactus() {
                                     <p className="text-sm sm:text-base">
                                         <NavLink
                                             to="mailto:support@gmail.com"
-                                            className="text-red-600 hover:text-red-600  hover:underline transform hover:-translate-x-2 hover:decoration-2 hover:decoration-red-800 transition-all duration-300 ease-in"
+                                            className="text-red-600 hover:text-red-800  hover:underline transform hover:-translate-x-2 hover:decoration-2 hover:decoration-red-800 transition-all duration-300 ease-in"
                                         >
                                             info@firstclassflight.com
                                         </NavLink>
