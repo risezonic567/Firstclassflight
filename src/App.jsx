@@ -2,12 +2,13 @@ import React, { lazy, Suspense, useEffect, useState } from 'react'
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router'
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Navbar from './components/Navbar'
+// import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Loader from './components/Loader'
 import NotFound from './components/PageNotFound';
 import BlogPage from './pages/BlogPage';
 import SingleBlog from './pages/SingleBlog';
+import Navbar from './components/Navbar';
 
 let Home = lazy(() => import('./pages/Homepage'))
 let About = lazy(() => import('./pages/Aboutpage'))
