@@ -62,7 +62,7 @@ export default function Contactus() {
             </section>
             <section >
                 <div className=" mx-auto py-12 px-4 bg-red-100 ">
-                    <h3 className='text-red-600 text-center text-lg sm:text-xl md:text-2xl text-red-600'>We’re Here for Your Premium Travel Needs</h3>
+                    <h3 className='text- text-center text-lg sm:text-xl md:text-2xl text-red-600'>We’re Here for Your Premium Travel Needs</h3>
                     <p className='max-w-5xl mx-auto p-2 sm:p-3 md:p-4 text-gray-600 text-sm sm:text-base text-center'>
                         We're here to help with any inquiries you have about booking your next first-class or business-class flight as well as answering any questions about quotes or providing help with existing reservations. With a first-class flight, you will experience exceptional customer service from initial contact until your flight is over with zero difficulties.
                     </p>

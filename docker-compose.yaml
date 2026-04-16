@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: frontend-first-class  
+    ports:
+      - "80:80"  
+    restart: always
+
+    volumes:
+      - ../Firstclassflight:/app
+      - /app/node_modules
