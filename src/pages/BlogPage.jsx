@@ -71,7 +71,7 @@ export default function BlogPage() {
               href="/"
               className="inline-block bg-teal-600 text-white px-8 py-3 rounded-full font-semibold shadow-md hover:bg-teal-700 transition-all text-lg"
             >
-              Start Your Flight Search
+              Start Your Flights Searching
             </a>
 
           </div>
