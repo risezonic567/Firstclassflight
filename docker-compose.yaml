@@ -1,15 +1,12 @@
+# use in production
+
 version: "3.9"
 
 services:
   frontend:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    container_name: frontend-first-class  
-    ports:
-      - "5173:5173"  
+    build: .
+    container_name: frontend_first_class
     restart: always
+    ports:
+      - "5173:5173"
 
-    volumes:
-      - ../Firstclassflight:/app
-      - /app/node_modules
