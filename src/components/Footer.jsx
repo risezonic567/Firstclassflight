@@ -5,7 +5,8 @@ import {
   FaFacebook,
   FaInstagram,
   FaWhatsapp,
-  
+ FaPinterest,
+  FaLinkedin,
   FaYoutube,
 } from "react-icons/fa";
 import { MapPin, PhoneCall, Copyright } from "lucide-react";
@@ -43,7 +44,7 @@ export default function Footer() {
         ref={footerRef}
         className="w-full bg-gradient-to-r from-gray-700/40 via-gray-800/80 to-gray-900/90 text-white pt-16 pb-8"
       >
-        <div className="max-w-7xl mx-auto px-6 grid gap-12 md:grid-cols-2 lg:grid-cols-4">
+        <div className="max-w-7xl mx-auto  grid gap-12 md:grid-cols-2 lg:grid-cols-4">
 
           {/* Logo + About */}
           <div className="footer-animate space-y-5">
@@ -61,14 +62,15 @@ export default function Footer() {
 
             {/* Social Icons */}
             <div className="flex gap-4">
-              {[{i:FaInstagram,link:"https://www.instagram.com/firstclassflight1/?hl=en"}, {i:FaYoutube,link:"https://www.youtube.com/@FirstclassFlight-1"}, {i:FaFacebook,link:"https://www.facebook.com/firstclassflight01/"}].map(
+              {[{i:FaInstagram,link:"https://www.instagram.com/firstclassflight1/?hl=en"}, {i:FaYoutube,link:"https://www.youtube.com/@FirstclassFlight-1"}, {i:FaFacebook,link:"https://www.facebook.com/firstclassflight01/"},{i:FaPinterest,link:"https://www.pinterest.com/firstclassflight13/"},{i:FaLinkedin,link:"https://www.linkedin.com/company/first-class-flight1/"}].map(
                 (Icon, i) => (
-                  <div
+                  <NavLink
+                  to={Icon.link}
                     key={i}
                     className="w-12 h-12 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center hover:bg-red-600 transition duration-300 cursor-pointer"
                   >
-                   <NavLink to={Icon.link}> <Icon.i className="text-xl hover:scale-110 transition" /></NavLink>
-                  </div> 
+                  <Icon.i className="text-xl hover:scale-110 transition" />
+                  </NavLink> 
                 )
               )}
             </div>
