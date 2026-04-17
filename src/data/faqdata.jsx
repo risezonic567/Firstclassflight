@@ -2,11 +2,11 @@ export let faqdata={
   "booking_search": [
     {
       "question": "How do I search for flights on your website?",
-      "answer": "Enter your origin, destination, travel dates, and passengers to see available flights options instantly."
+      "answer": "Enter your origin, destination, travel dates, and passengers to see available flight options instantly."
     },
     {
       "question": "Can I choose my seat while booking?",
-      "answer": "Yes, seat selection is available on most airlines during booking or at online check-in."
+      "answer": "Yes seat selection is available on most airlines during booking or at online check-in."
     },
     {
       "question": "Will I get instant booking confirmation?",
