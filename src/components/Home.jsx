@@ -121,10 +121,10 @@ export default function Home() {
                    </div>
                     <div className='max-w-70 mx-auto flex justify-between items center'>
                         <div>
-                        <NavLink to={'/search-flights'} className={`p-4 mx-auto bg-red-600  hover:bg-red-800 rounded-xl text-white`}>Search Flights</NavLink>
+                        <NavLink to={'/search-flights'} className={`p-4 mx-auto bg-red-600  rounded-xl text-white`}>Search Flights</NavLink>
                     </div>
                      <div>
-                        <NavLink to={'tel:8663075957'} className={`p-4 mx-auto bg-gray-600 hover:bg-black rounded-xl text-white`}>Call Us Now</NavLink>
+                        <NavLink to={'tel:8663075957'} className={`p-4 mx-auto bg-gray-600  rounded-xl text-white`}>Call Us Now</NavLink>
                     </div>
                     </div>
                 </div>
