@@ -16,3 +16,31 @@ h5,
 h6 {
     font-family: 'Playfair Display', serif;
 }
+
+.mySwiper .swiper-pagination {
+    margin-top: 20px;
+    position: relative;
+}
+
+.mySwiper .swiper-pagination-bullet {
+    background: #ccc;
+    opacity: 1;
+    width: 10px;
+    height: 10px;
+    transition: all 0.3s ease;
+}
+
+.mySwiper .swiper-pagination-bullet-active {
+    background: #dc2626; /* red */
+    width: 22px;
+    border-radius: 10px;
+}
+.mySwiper .swiper-pagination-bullet {
+    background: #ddd;
+    transform: scale(1);
+}
+
+.mySwiper .swiper-pagination-bullet-active {
+    background: #dc2626;
+    transform: scale(1.3);
+}

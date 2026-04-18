@@ -135,16 +135,18 @@ export default function Home() {
             </div>
           
             <section>
+                 <h2 className='text-lg sm:text-xl mt-2 md:text-2xl text-center text-red-600'> Why Travelers Trust Our Flight Experts</h2>
                 <div data-aos="fade-up-right">
+            
                     <div className='max-w-7xl mx-auto px-3 py-12 grid grid-cols-1 md:grid-cols-2 gap-5'>
                         <div className='order-1 md:order-1'>
                             <div>
-                                <h2 className='text-lg sm:text-xl md:text-2xl text-center text-red-600'> Why Travelers Trust Our Flight Experts</h2>
+                               
                                 <p className='mt-1 text-sm sm:text-base text-justify text-gray-600 font-semibold'>
                                     Choosing a premium cabin isn’t only about finding the perfect seat; it's also about how you will be treated from the moment you book until you reach the destination. We are trusted by our customers due to the level of detail we provide, including flexible itineraries, affordable prices, and true personal assistance when a trip changes.
 
                                 </p>
-                                <p className=' text-sm sm:text-base text-justify text-gray-600 font-semibold'>
+                                <p className=' text-sm sm:text-base text-justify py-2 text-gray-600 font-semibold'>
                                     Unlike using an automated search engine for your booking, you will receive personalized customer service from travel experts who are knowledgeable of international premium routing & airline price structure. This means better choices, clearer guidance, and an easy-to-use booking process.
                                 </p>
                             </div>
@@ -162,14 +164,15 @@ export default function Home() {
                 <div data-aos="fade-right"
                     data-aos-offset="300"
                     data-aos-easing="ease-in-sine">
+                         <h2 className='text-xl sm:text-2xl py-3 md:text-3xl text-center  text-red-600'>Corporate Travel Management
+                                </h2>
                     <div className='max-w-7xl mx-auto px-3 py-12 grid grid-cols-1 md:grid-cols-2 gap-5'>
                         <div className='order-2 md:order-2'>
                             <div>
-                                <h2 className='text-xl sm:text-2xl md:text-3xl text-center text-red-600'>Corporate Travel Management
-                                </h2>
-                                <h3 className='text-sm sm:text-lg md:text-xl text-gray-600 text-center '>Premium flight solutions designed for modern business teams.
+                               
+                                <h3 className='text-sm sm:text-lg md:text-xl py-3 text-gray text-center '>Premium flight solutions designed for modern business teams.
                                 </h3>
-                                <p className='mt-3 text-sm sm:text-base text-justify text-gray-600 font-semibold'>
+                                <p className='mt-3 text-sm sm:text-base text-justify py-1 text-gray-600 font-semibold'>
                                     Business travel is not only about crossing the distance between destinations but also about arriving appropriately and awake. Our Corporate Travel Specialists would be glad to work with you in creating an ideal itinerary for your executives, personnel, and international clients.
 
 
@@ -198,7 +201,7 @@ export default function Home() {
                     <div className=' grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 p-5'>
                         {
                             ourServices.map((item, id) => (
-                                <div key={id} className='rounded-2xl shadow-lg text-red-600 shadow-red-600 z-50 transition-all duration-300 ease-in hover:-translate-y-4'>
+                                <div key={id} className='rounded-2xl shadow-xs text-red-600 shadow-red-600 z-50 transition-all duration-300 ease-in hover:-translate-y-4'>
                                     <span className="text-3xl justify-center flex p-5 items-center">
                                         {item.icon === "FaPlaneDeparture" && <FaPlaneDeparture />}
                                         {item.icon === "FaCrown" && <FaCrown />}
@@ -221,12 +224,13 @@ export default function Home() {
 
             </section>
             <section>
+                <h2 className='text-xl sm:text-2xl md:text-3xl text-center text-red-600'>Ready to Book Your Premium Flight?</h2>
                 <div data-aos="flip-right">
                     <div className='max-w-7xl mx-auto px-3 py-12 grid grid-cols-1 md:grid-cols-2 gap-5'>
                         <div className='order-1 md:order-1'>
                             <div>
-                                <h2 className='text-xl sm:text-2xl md:text-3xl text-center text-red-600'>Ready to Book Your Premium Flight?</h2>
-                                <h3 className='text-sm sm:text-lg md:text-xl text-gray-600 text-center '>Let our specialists help you find your next first-class ticket for travel.
+                                
+                                <h3 className='text-base sm:text-lg py-2 md:text-xl text-black text-center '>Let our specialists help you find your next first-class ticket for travel.
                                 </h3>
                                 <p className='mt-3 text-sm sm:text-base text-justify text-gray-600 font-semibold'>
                                     Our travel specialists are available to assist you in finding the best offers for a premium cabin seat whether you are traveling for business (executive travel; long-haul/overseas flights) or pleasure—to design a holiday/aspiring luxury vacation. Please provide the details of your trip so that our specialists can provide you with personalized options that fit into your preferred travel dates and times

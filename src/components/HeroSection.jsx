@@ -118,21 +118,40 @@ export default function HeroSection() {
 
                         {
                             popular.map((item, id) => (
-                                <SwiperSlide className='' key={id}>
+                               <SwiperSlide key={id}>
+  <div className="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 bg-white">
 
-                                    <div className='' >
-                                        <div className='relative overflow-hidden group transition'>
-                                            <img src={item.img}  className=' h-full w-full transition-all duration-300 group-hover:scale-110' alt={`${item.img}`} />
-                                        </div>
-                                        <div className='p-1 sm:p-2 md:p-3'>
-                                            <h2 className='text-lg text-red-600 py-3 sm:text-xl md:text-2xl text-center'>{item.country}</h2>
-                                            <p className='text-sm sm:text-base text-justify'>
-                                                {item.description}
-                                            </p>
-                                        </div>
-                                    </div>
+    {/* Image */}
+    <div className="relative  overflow-hidden">
+      <img
+        src={item.img}
+        alt={item.country}
+        className="w-full h-full object-cover transform group-hover:scale-110 transition duration-500"
+      />
 
-                                </SwiperSlide>
+      {/* Dark Gradient Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+
+      {/* Country Title on Image */}
+      <h2 className="absolute bottom-4 left-4 text-white text-xl md:text-2xl font-bold">
+        {item.country}
+      </h2>
+    </div>
+
+    {/* Content */}
+    <div className="p-4 flex flex-col gap-3">
+      <p className="text-sm text-gray-600 leading-relaxed line-clamp-3">
+        {item.description}
+      </p>
+
+      {/* CTA Button */}
+      <button className="mt-auto bg-red-600 hover:bg-red-700 cursor-pointer text-white text-sm font-semibold py-2 px-4 rounded-full transition duration-300">
+        Explore Flights →
+      </button>
+    </div>
+
+  </div>
+</SwiperSlide>
                             ))
                         }
                     </Swiper>
