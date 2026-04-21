@@ -143,7 +143,7 @@ export default function Footer() {
             <div className="flex items-start gap-4">
               <PhoneCall size={20} />
               <a href="tel:+18663075957" className="text-sm hover:text-red-400">
-                +91 91550 14125
+              +18663075957
               </a>
             </div>
           </div>
