@@ -92,7 +92,7 @@ export default function About() {
                                 <p className='text-justify text-sm sm:text-base text-gray-600 '>
 
                                     Contact us <NavLink
-                                        to="tel:8663075957"
+                                        to="tel:+18663075957"
                                         className="text-red-600 hover:text-red-600  hover:underline transform hover:-translate-x-2 hover:decoration-2 hover:decoration-blue-800 transition-all duration-300 ease-in"
                                     >
                                         ( 8663075957)
@@ -188,7 +188,7 @@ export default function About() {
                                Traveling with a premium cabin should be seamless and easy — we will ensure you have an enjoyable trip from start to finish.
                             </p>
                             <div className='p-2 sm:p-3 md:p-4'>
-                                <NavLink to={'tel:8663075957'} className={`p-4 mx-auto bg-red-700 hover:bg-red-600 rounded-xl text-white`}>Call Us Now</NavLink>
+                                <NavLink to={'tel:+18663075957'} className={`p-4 mx-auto bg-red-700 hover:bg-red-600 rounded-xl text-white`}>Call Us Now</NavLink>
                             </div>
                         </div>
 

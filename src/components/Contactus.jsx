@@ -54,7 +54,7 @@ export default function Contactus() {
 
 
                     <div>
-                        <NavLink to={'tel:8663075957'} className={`p-4 mx-auto bg-red-600 hover:bg-red-800 rounded-xl text-white`}>Call Us Now</NavLink>
+                        <NavLink to={'tel:+18663075957'} className={`p-4 mx-auto bg-red-600 hover:bg-red-800 rounded-xl text-white`}>Call Us Now</NavLink>
                     </div>
 
                 </div>
@@ -114,7 +114,7 @@ export default function Contactus() {
                                     <h2 className="text-lg sm:text-xl md:text-2xl">Phone:-</h2>
                                     <p className="text-sm sm:text-base">
                                         <NavLink
-                                            to="tel:8663075957"
+                                            to="tel:+18663075957"
                                             className="text-red-600 hover:text-red-600  hover:underline transform hover:-translate-x-2 hover:decoration-2 hover:decoration-red-800 transition-all duration-300 ease-in"
                                         >
                                             8663075957

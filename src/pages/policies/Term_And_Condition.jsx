@@ -129,7 +129,7 @@ export default function TermsAndCondition() {
                             Tustin, CA 92780, USA
                         </p>
                         <p className='text-sm sm:text-base md:text-lg text-justify'>Email: <NavLink to={'mailto:info@firstclassflight.com'} className={' text-red-600 hover:underline hover:decoration-2 hover:decoration-red-600 hover:text-red-300 transition'}>info@firstclassflight.com</NavLink></p>
-                        <p className='text-sm sm:text-base md:text-lg text-justify'> Phone: <NavLink to={'tel:8663075957'} className={'text-red-600 hover:underline hover:decoration-2 hover:decoration-red-600 hover:text-red-300 transition'}>8663075957</NavLink></p>
+                        <p className='text-sm sm:text-base md:text-lg text-justify'> Phone: <NavLink to={'tel:+18663075957'} className={'text-red-600 hover:underline hover:decoration-2 hover:decoration-red-600 hover:text-red-300 transition'}>8663075957</NavLink></p>
 
                     </div>
                 </div>

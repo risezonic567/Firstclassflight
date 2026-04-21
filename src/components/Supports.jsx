@@ -31,7 +31,7 @@ export default function Supports() {
 
 
                     <div>
-                        <NavLink to={'tel:8663075957'} className={`p-4 mx-auto bg-red-600 hover:bg-red-600 rounded-xl text-white`}>Call Us Now</NavLink>
+                        <NavLink to={'tel:+18663075957'} className={`p-4 mx-auto bg-red-600 hover:bg-red-600 rounded-xl text-white`}>Call Us Now</NavLink>
                     </div>
 
                 </div>

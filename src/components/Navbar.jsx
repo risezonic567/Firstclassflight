@@ -53,7 +53,7 @@ export default function Navbar() {
                         }
                     </div>
                     <div className='rounded-3xl bg-red-600 mx-5 text-white font-semibold'>
-                        <button className={`p-4 bg--650 rounded-sm `}><NavLink to={'tel:9155014125'}>Book Now</NavLink> </button>
+                        <button className={`p-4 bg--650 rounded-sm `}><NavLink to={'tel:+18663075957'}>Book Now</NavLink> </button>
                     </div>
 
                     <button className='md:hidden' onClick={() => { setmobile(!mobile) }}>
