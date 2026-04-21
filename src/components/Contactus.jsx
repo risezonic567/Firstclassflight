@@ -22,7 +22,7 @@ export default function Contactus() {
  "@type":"Organization",
  "name":"First Class Flight",
  "telephone":"+866 307-5957",
- "email":"support@gmail.com",
+ "email":"info@firstclassflight.com",
  "address":{
  "@type":"PostalAddress",
  "streetAddress":"A-16 17662 Irvine Blvd, Suite 9",
@@ -95,7 +95,7 @@ export default function Contactus() {
                                     <h2 className="text-lg sm:text-xl md:text-2xl">Email:-</h2>
                                     <p className="text-sm sm:text-base">
                                         <NavLink
-                                            to="mailto:support@gmail.com"
+                                            to="mailto:info@firstclassflight.com"
                                             className="text-red-600 hover:text-red-600  hover:underline transform hover:-translate-x-2 hover:decoration-2 hover:decoration-red-800 transition-all duration-300 ease-in"
                                         >
                                             info@firstclassflight.com

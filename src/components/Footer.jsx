@@ -135,8 +135,8 @@ export default function Footer() {
 
             <div className="flex items-start gap-4">
               <FaEnvelope size={20} />
-              <a href="mailto:support@gmail.com" className="text-sm hover:text-red-400">
-                support@gmail.com
+              <a href="mailto:info@firstclassflight.com" className="text-sm hover:text-red-400">
+                info@firstclassflight.com
               </a>
             </div>
 

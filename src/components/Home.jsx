@@ -273,7 +273,7 @@ export default function Home() {
                             <div className='p-1 sm:p-2 md:p-3'>
                                 <h2 className='text-center text-lg sm:text-xl md:text-2xl text-gray-600'>Email</h2>
                                 <div className='flex items-center justify-center'>
-                                    <NavLink to="mailto:support@gmail.com" className='text-center text-sm sm:text-base hover:text-red-600 transition-all duration-300 ease-in py-2'>support@gmail.com</NavLink>
+                                    <NavLink to="mailto:info@firstclassflight.com" className='text-center text-sm sm:text-base hover:text-red-600 transition-all duration-300 ease-in py-2'>info@firstclassflight.com</NavLink>
                                 </div>
                             </div>
 

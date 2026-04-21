@@ -17,7 +17,7 @@ export default function Homepage() {
     "name":"First Class Flight",
     "url":"https://www.first-classflight.com/",
     "logo":"https://www.first-classflight.com/images/logo/FCF%20LOGO.png",
-    "email":"support@gmail.com",
+    "email":"info@firstclassflight.com",
     "telephone":"+866 307-5957",
     "address":{
       "@type":"PostalAddress",
@@ -41,7 +41,7 @@ export default function Homepage() {
     "url":"https://www.first-classflight.com/",
     "logo":"https://www.first-classflight.com/images/logo/FCF%20LOGO.png",
     "telephone":"+866 307-5957",
-    "email":"support@gmail.com",
+    "email":"info@firstclassflight.com",
     "address":{
       "@type":"PostalAddress",
       "streetAddress":"A-16 17662 Irvine Blvd, Suite 9",
