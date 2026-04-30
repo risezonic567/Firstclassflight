@@ -662,7 +662,7 @@ This guide provides information on the optimal times to purchase your tickets, t
 The airlines follow the concept of dynamic pricing, where ticket prices keep changing depending upon demand and booking trends.
   </p>
 
-  <p class="mb-4 mt-4 mt-4">
+  <p class="mb-4 mt-4">
   
   In contrast to the economy classes, first class compartments have fewer seating arrangements; therefore, prices will go up rapidly with an increase in bookings.
   </p>
