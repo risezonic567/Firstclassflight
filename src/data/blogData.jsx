@@ -1464,7 +1464,7 @@ When you book first class, you are not just paying for a better seat; you are al
 
     <p class="italic ">
     
-“Luxury is not about owning expensive things; it’s about experiencing comfort at the right time, and in travel, timing is everything.”
+“Luxury is not about owning expensive things; it’s about experiencing comfort at the right time, and in travel, timing is everythings.”
    </p>
     <p class="mt-3">
     
