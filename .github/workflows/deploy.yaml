@@ -15,10 +15,10 @@ jobs:
        with:
         host: ${{secrets.SSH_HOST}}
         username: root  
-        key: ${{secrets.SSH_KEY}}
+        key: ${{secrets.SSH_PRIVATE_KEY}}
         script: |
        
-         cd /var/www/Fristclassflight
+         cd /var/www/Firstclassflight
 
          git pull origin main
 
