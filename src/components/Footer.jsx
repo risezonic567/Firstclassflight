@@ -179,6 +179,7 @@ Lewes, Delaware 19958, County of Sussex, USA
           <span className="absolute inset-0 rounded-full bg-green-400 animate-ping opacity-20"></span>
           <FaWhatsapp className="text-white text-2xl relative z-10" />
         </a>
+        
       </div>
 
       <div className="fixed bottom-6 right-6 z-50">
