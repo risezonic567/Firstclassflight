@@ -128,9 +128,15 @@ export default function Footer() {
 
             <div className="flex items-start gap-4">
               <MapPin size={22} />
-              <p className="text-sm text-gray-300">
+              {/* <p className="text-sm text-gray-300">
                 A-16 17662 Irvine Blvd, Suite 9, Tustin, CA 92780
+              </p> */}
+
+               <p className="text-sm text-gray-300">
+              16192 Coastal Highway,
+Lewes, Delaware 19958, County of Sussex, USA
               </p>
+
             </div>
 
             <div className="flex items-start gap-4">
@@ -142,8 +148,8 @@ export default function Footer() {
 
             <div className="flex items-start gap-4">
               <PhoneCall size={20} />
-              <a href="tel:+18663075957" className="text-sm hover:text-red-400">
-              +18663075957
+              <a href="tel:+91 85888096901" className="text-sm hover:text-red-400">
+              +91 85888096901
               </a>
             </div>
           </div>
@@ -165,7 +171,7 @@ export default function Footer() {
       {/* Floating Buttons */}
       <div className="fixed bottom-24 right-6 z-50">
         <a
-          href="https://wa.me/+18663075957"
+          href="https://wa.me/18663075957"
           target="_blank"
           rel="noreferrer"
           className="relative w-14 h-14 bg-green-500 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition"
@@ -177,7 +183,7 @@ export default function Footer() {
 
       <div className="fixed bottom-6 right-6 z-50">
         <a
-          href="tel:+18663075957"
+          href="tel:+91 85888096901"
           className="relative w-14 h-14 bg-red-700 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition"
         >
           <span className="absolute inset-0 rounded-full bg-red-400 animate-ping opacity-20"></span>
