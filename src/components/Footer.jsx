@@ -171,7 +171,7 @@ Lewes, Delaware 19958, County of Sussex, USA
       {/* Floating Buttons */}
       <div className="fixed bottom-24 right-6 z-50">
         <a
-          href="https://wa.me/18663075957"
+          href="https://wa.me/85888096901"
           target="_blank"
           rel="noreferrer"
           className="relative w-14 h-14 bg-green-500 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition"
